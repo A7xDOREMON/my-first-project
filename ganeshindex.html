@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+         body{
+            font-family: Georgia, 'Times New Roman', Times, serif; 
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color:whitesmoke;
+        }
+           .container{
+               background-color:whitesmoke;
+               width:45%;
+               margin:auto;
+           }
+           .form-field input{
+               width:80%;
+               padding: 10px;
+           }
+   </style>
+</head>
+<style>
+       .title{
+           color:orange;
+       }
+   .quote{
+       color:orange;
+   }
+   p{
+       color:violet;
+   }
+   label{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 15px;
+   }
+</style>
+<body>
+    <form class="container" action="./login.html">     
+        <h1 class="title">Login</h1>    
+        <h2 class="quote">With Your Details</h2>      
+        <style>
+            body{
+                background-color:blueviolet;
+            }
+        </style> 
+    <p class="form-field">
+        <label for="">NAME</label><br/>
+        <input type="text" 
+    placeholder="enter your name"required/>
+    
+    </p class="form-field">
+    <label for="">EMAIL</label><br/>
+   <p>
+    <input type="email"
+    placeholder="enter your email"required/>
+    </p>
+    <p class="form-field">
+        <label for=""PASSWORD></label></br>
+        <input type="password"
+        placeholder="enter your password"required/>
+    </p>
+    <p>
+        <input type="radio"name="gender"/>
+        male
+        <input type="radio"name="gender"/>
+        female
+    </p>
+    <p>
+        <input type="date"
+        placeholder="enter date"required/>
+    </p>
+   
+    <p>
+        <select>
+            <option value="">select your state required</option>
+            <option value="">AP</option>
+            <option value="">TS</option>
+            <option value="">TN</option>
+            <option value="">DL</option>
+        </select>
+    </p>
+
+    <p>
+        <input type= "number"
+        placeholder="enter your phone number"/> 
+    
+    </p>
+    <p>
+        <input type="file">
+    </p>
+    <button>submit</button>
+    </form>
+</body>
+</html>

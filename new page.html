@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif; 
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color:whitesmoke;
+        }
+        .container{
+            display:flex;
+            width: 900px;
+            height: 500px;
+            background-color: white;
+            border-radius: 90px;
+        }
+        .login-section{
+            width:50%;
+            padding: 60px;
+        }
+        h2{
+            margin-bottom: 40px;
+        }
+        form{
+            display:flex;
+            flex-direction:column;
+        }
+        label{
+            font-size: 0.9rem ;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        input[type="text"],input[type="password"]{
+            width:100%;
+            padding:10px;
+            margin:5px 0px;
+            border-radius: 25px;
+            border: 1px solid #ccc;
+           }
+           button{
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            color: black;
+            border-radius: 25px;
+            border: none;
+            background-color: bisque;
+           }
+           .remember-links{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           }
+           .remember-links a{
+            text-decoration: none;
+            color: deeppink;
+           }
+           .welcome-section{
+            width: 50%;
+            background-color: deeppink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            border-radius: 90px;
+           }
+           .sign-up{
+            border: 1px solid white;
+            color: white;
+            padding: 8px 10px;
+            border-radius: 25px;
+            width: 20%;
+            text-align: center;
+            text-decoration: none;
+           }
+           .sign-up:hover{
+            background-color: white;
+            color: #ff4576;
+
+           }
+           @media (max-width:768px){
+            .container{
+                flex-direction: column;
+                width: 90%;
+                height: auto;
+            }
+           }
+           .login-section , .welcome-section{
+            width: 90%;
+            padding: 30px;
+             }
+           .welcome-section{
+            padding: 40px 20px;
+           }
+           input[type="text"],input=[type="password"],button,
+           .remember-links{
+            .width:80%
+           }
+
+        </style>
+        </head>
+        <body>
+    <div class="container">
+     <div class="login-section">
+        <h2>Sign In</h2>
+        <form action="">
+            <p>
+            <label for="">Username</label></br>
+            <input type="text" placeholder="enter Username" required/>
+            </p>
+            <p>
+            <label for="">Password</label></br>
+            <input type="password"
+            placeholder="enter password"required/>
+            </p>
+            <button>Sing In</button>
+            <div class="remember-links">
+                <p>
+                    <input type="checkbox">
+                    <label>remember me</label>
+                </p>
+        
+
+            <a href="">Forget Password</a>  
+            </div>
+        </form>
+
+
+     </div>
+     <div class="welcome-section">
+        <h2>welcome to login</h2>
+        <p>dont have an account</p>
+        <a href=""class="sign-up">sign up</a>
+    </div>
+    </div>
+
+
+</body>
+</html>
